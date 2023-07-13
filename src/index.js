@@ -1,5 +1,5 @@
 import GraphiQL from "graphiql";
-import "graphiql/graphiql.css";
+import "graphiql/graphiql.min.css";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";

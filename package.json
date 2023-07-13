@@ -9,7 +9,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "electron-dev": "concurrently -k -s first \"npm start\" \"wait-on http://localhost:3000/ && electron .\""
+    "electron-dev": "concurrently -k -s first \"npm start\" \"wait-on http://localhost:3000/ && electron .\"",
+    "electron": "electron ."
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,18 +22,23 @@
     "not op_mini all"
   ],
   "dependencies": {
-    "electron": "~13.6.6",
-    "electron-cppgraphql": "wravery/electron-cppgraphql#660df46a6ae5c43bded92d20a809f6c03e715139",
-    "electron-is-dev": "^1.2.0",
-    "graphiql": "1.5.16",
-    "graphql": "16.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "^4.0.3",
-    "typescript": "^3.5.3"
+    "electron": "^26.0.0-beta.4",
+    "electron-cppgraphql": "gitmodimo/electron-cppgraphql#9bb08902f20a0c137ca7b745dec992dfde076f06",
+    "electron-is-dev": "^2.0.0",
+    "graphiql": "3.0.0",
+    "graphql": "16.7.1",
+    "graphql-ws": "^5.14.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^5.1.6"
   },
   "devDependencies": {
-    "concurrently": "~5.3.0",
-    "wait-on": "~5.2.0"
+    "concurrently": "~8.2.0",
+    "wait-on": "~7.0.1"
+  },
+  "overrides": {
+    "typescript": "^5.1.6"
   }
+  
 }
